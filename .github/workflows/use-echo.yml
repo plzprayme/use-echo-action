@@ -1,0 +1,15 @@
+name: use echo action
+
+on:
+  push:
+    branches: [ master ]
+    
+jobs:
+  echo:
+    
+    runs-on: ubuntu-latest
+    
+    steps:
+      - uses: plzprayme/echo@master
+        with:
+          say: 안녕 매시업~
